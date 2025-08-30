@@ -1,3 +1,8 @@
+def get_book_text(fp):
+    with open(fp,"r") as f:
+        file_contents = f.read()
+        return file_contents
+
 def word_amount(b):
     words = b.split()
     num_words = len(words)
